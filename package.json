@@ -8,6 +8,9 @@
     "start": "ts-node src/index.ts",
     "watch": "nodemon src/index.ts"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "author": "ankit <me@unkitkr.xyz>",
   "license": "ISC",
   "dependencies": {
