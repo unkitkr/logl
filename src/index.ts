@@ -4,7 +4,7 @@ import { bodyParser, commandProcessor, messageParser } from './helpers'
 const environmentVariables = process.env
 
 const app = express()
-const port = environmentVariables.port || 3000
+const port = environmentVariables.PORT || 3000
 
 app.use(express.json())
 
