@@ -89,7 +89,7 @@ export class commandProcessor {
 
   private newStatus = async () => {
     const messageRecieved = this.parsedMessage.message.split(' ')
-    if (messageRecieved && messageRecieved.length !== 2) {
+    if (messageRecieved && messageRecieved.length < 2) {
       await this.sendMessage('sendMessage', {
         text: `The format to send new status is : category1,cattegory2.. <space> status`,
         reply_to_message_id: this.processedData.messageId,
