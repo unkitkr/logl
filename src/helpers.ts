@@ -101,7 +101,7 @@ export class commandProcessor {
     }
 
     const cat = messageRecieved[0].split(',')
-    const msg = messageRecieved[1]
+    const msg = messageRecieved.slice(1).join(' ')
     try {
       const status = await this.statusDb.create(
         [
